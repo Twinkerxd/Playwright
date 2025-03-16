@@ -26,6 +26,6 @@ public class Tests extends BaseTest {
                 .clickPricingButton()
                 .clickJoinForFreeButton();
 
-        Assertions.assertFalse(new SignUpPage(page).isSignUpTitleVisible());
+        Assertions.assertTrue(new SignUpPage(page).isSignUpTitleVisible());
     }
 }
